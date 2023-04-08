@@ -1,0 +1,20 @@
+.main-div{
+    border: solid black 2px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+}
+.title-div{
+    border: solid darkkhaki 2px;
+    width: 100px;
+   
+}
+.desc-div{
+    border: solid darkblue 2px;
+    /* margin-top: 15px; */
+    /* height: 100px; */
+}
+.time-div{
+    border: solid goldenrod 2px;
+    display: flex;
+}
