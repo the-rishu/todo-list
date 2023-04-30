@@ -32,22 +32,19 @@ const Data = (props) => {
      setModal(false)
    }
   return (
+   <>
+    
+
    <div className='main-div'>
-
-    <div className='title-div'> {props.arg.task} </div>
-
-
-     <div className='desc-div'> {props.arg.desc}</div>
-
-
-          <div className='time-div'>
+      <div className='title-div'> {props.arg.task} </div>
+      <div className='desc-div'> {props.arg.desc}</div>
+      <div className='time-div'>
               <span>{props.time.hour}:</span>
               <span>{props.time.min}</span>
-          </div>
+      </div>
 
 
      <div className='status-div'>
-          <label >Status : </label>
           <select >
               <option value="Open">Open</option>
               <option value="Working">Working</option>
@@ -57,18 +54,20 @@ const Data = (props) => {
      </div>
         
         <div className='exp-div'>
-            {day} 
-            {month}
+            {day}/
+            {month}/
             {year}
         </div>
    
      <div className='modify-div'>
          <button onClick={() =>{setModal(true)}}>Edit</button> 
-          <button onClick={handledelete}>Delete</button>
+          <button onClick={handledelete}>Del</button>
       </div>
    
     <EditTask modal={modal} toggle={toggle} updatetask={updatetask}/>
    </div> 
+   </>
+
    
   )
 }

@@ -61,12 +61,14 @@ const Todolist = () => {
           setModal(true)
         }}>Create Task</button>
     </div>
+    
         <div>
         {tasklist.map((obj) => <Data key={obj.id} arg={obj} time={time} deleteTask={deleteTask} updatelist={updatelist} />)}
         </div>
     <div className='task-container'>
          <Createtask toggle = {toggle} modal={modal} save={saveTask}/>
     </div>
+    
    </>
   )
 }
